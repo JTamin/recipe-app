@@ -10,6 +10,7 @@ export const Recipe = () => {
   const { data, loading, error } = useFetch(
     "https://dummyjson.com/recipes?limit=0",
   );
+
   const [currentPage, setCurrentPage] = useState(1);
   const [value] = useDebounce(search, 500);
 
