@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import { useHooks } from "../hooks/useHooks";
 import { SingleRecipeItems } from "../components/SingleRecipeItems";
+import { useFetch } from "../hooks/useFetch";
 
 export const SingleRecipe = () => {
   const { id } = useParams();
 
-  const { data, loading, error } = useHooks(
+  const { data, loading, error } = useFetch(
     `https://dummyjson.com/recipes/${id}`,
   );
   const singleRecipe = data;
