@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Favorites, Home } from "./pages";
 import { Navbar } from "./components/Navbar";
+import { SingleRecipe } from "./pages/SingleRecipe";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/recipe/:id" element={<SingleRecipe />} />
       </Routes>
     </BrowserRouter>
   );

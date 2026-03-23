@@ -2,7 +2,7 @@ import heroImg from "../assets/hero-background.jpg";
 
 export const Hero = () => {
   return (
-    <div className="relative h-[400px] w-full">
+    <div className="relative h-100 w-full">
       <img
         src={heroImg}
         alt="Hero background"
