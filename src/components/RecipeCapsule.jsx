@@ -3,8 +3,9 @@ import { PiCarrotLight } from "react-icons/pi";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const RecipeCapsule = ({ item, isEven }) => {
+const RecipeCapsule = ({ item, index }) => {
   const { image, name, id, cookTimeMinutes, ingredients } = item;
+  const isEven = index % 2 === 0;
 
   return (
     <div className="flex justify-end w-full h-60 bg-zinc-800 rounded-full">
