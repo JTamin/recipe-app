@@ -5,7 +5,7 @@ export const Navbar = () => {
     <nav className="flex justify-between p-4 bg-zinc-800 relative">
       <div>
         <Link to="/" className="text-xl font-bold text-yellow-400">
-          Food
+          Global Bites
         </Link>
       </div>
       <div>
