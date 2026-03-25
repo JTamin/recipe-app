@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { Loading } from "./Loading";
 import { useFetch } from "../hooks/useFetch.js";
 import { useDebounce } from "use-debounce";
-import Pagination from "./pagination.jsx";
+import Paginations from "./Paginations.jsx";
 
 const RecipeCapsules = lazy(() => import("./RecipeCapsule.jsx"));
 export const Recipe = () => {
@@ -49,7 +49,7 @@ export const Recipe = () => {
         ) : (
           <h1 className="text-zinc-100 text-2xl">No recipes found</h1>
         )}
-        <Pagination
+        <Paginations
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}

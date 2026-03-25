@@ -1,6 +1,6 @@
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
-const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
+const Paginations = ({ currentPage, setCurrentPage, totalPages }) => {
   return (
     <div>
       {totalPages > 0 && (
@@ -40,4 +40,4 @@ const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
     </div>
   );
 };
-export default Pagination;
+export default Paginations;
