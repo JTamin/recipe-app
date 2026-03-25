@@ -13,10 +13,8 @@ const RecipeCapsule = ({ item, index }) => {
   return (
     <div className="flex justify-end w-full sm:h-60 lg:h-100 bg-zinc-800 rounded-full">
       <div
-        className={`flex-1 flex items-center justify-center relative ${
-          !isEven
-            ? "order-last right-[-8vw] md:right-[-10vw] lg:right-[-12vw] xl:right-[-13.5vw]"
-            : "left-[-7vw] md:left-[-10vw] lg:left-[-12vw] xl:left-[-13.5vw]"
+        className={`flex-1 flex items-center relative ${
+          isEven ? "justify-start" : "justify-end order-last"
         }`}
       >
         <img

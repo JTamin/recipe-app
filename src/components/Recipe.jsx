@@ -37,7 +37,8 @@ export const Recipe = () => {
         <input
           type="text"
           onChange={(e) => setSearch(e.target.value)}
-          className="border p-2 rounded bg-zinc-200 w-60 text-10"
+          className="border p-2 rounded bg-zinc-200 w-2xl h-15
+           text-30"
           placeholder="Search recipe..."
         />
       </div>
