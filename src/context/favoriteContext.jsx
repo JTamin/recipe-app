@@ -10,18 +10,11 @@ export default function Favorite({ children }) {
 
   const toggleFavorite = (fav) => {
     setFavorite((prev) => {
-      let updatedFavorites;
       const exists = prev?.find((item) => item.id === fav.id);
 
-      if (exists) {
-        updatedFavorites = prev.filter((item) => item.id !== fav.id);
-      } else {
-        updatedFavorites = [...prev, fav];
-      }
-
-      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
-
-      return updatedFavorites;
+      return exists
+        ? prev.filter((item) => item.id !== fav.id)
+        : [...prev, fav];
     });
   };
   useEffect(() => {

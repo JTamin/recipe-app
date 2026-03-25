@@ -5,7 +5,9 @@ export const Home = () => {
   return (
     <div>
       <Hero />
-      <h1 className="text-3xl text-white font-semibold ml-12 mt-6">Recipes</h1>
+      <h1 className="text-3xl text-white font-semibold ml-12 mt-6 lg:text-5xl">
+        Recipes
+      </h1>
       <Recipe />
     </div>
   );

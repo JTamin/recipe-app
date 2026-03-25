@@ -19,7 +19,7 @@ const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
                 <button
                   key={i}
                   onClick={() => setCurrentPage(page)}
-                  className={`h-10 w-10 rounded-full flex items-center justify-center text-sm text-zinc-700 m-1 5 ${
+                  className={`h-10 w-10 rounded-full flex items-center hover:bg-amber-300 justify-center text-sm text-zinc-700 m-1 cursor-pointer ": ${
                     currentPage === page ? "bg-amber-300" : "bg-white"
                   }`}
                 >
