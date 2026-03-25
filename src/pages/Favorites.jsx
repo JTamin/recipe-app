@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useFavContext } from "../context/favoriteContext";
+import RecipeCapsule from "../components/RecipeCapsule";
 
 export const Favorites = () => {
   const { favorite } = useFavContext();
