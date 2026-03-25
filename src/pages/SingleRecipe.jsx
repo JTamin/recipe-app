@@ -17,7 +17,7 @@ export const SingleRecipe = () => {
         <title>{singleRecipe.name} </title>
         <meta name="description" content={singleRecipe.name} />
       </Helmet>
-      <SingleRecipeItems key={singleRecipe.id} {...singleRecipe} />;
+      <SingleRecipeItems key={singleRecipe.id} {...singleRecipe} />
     </>
   );
 };
