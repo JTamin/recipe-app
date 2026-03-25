@@ -1,8 +1,8 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Loading } from "./Loading";
-import Pagination from "./pagination.jsx";
 import { useFetch } from "../hooks/useFetch.js";
 import { useDebounce } from "use-debounce";
+import Pagination from "./pagination.jsx";
 
 const RecipeCapsules = lazy(() => import("./RecipeCapsule.jsx"));
 export const Recipe = () => {
